@@ -1,0 +1,33 @@
+﻿@model List<Musteri>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Tc</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Email</th>
+            <th>Telefonno</th>
+            <th>Cinsiyet</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.tc</td>
+                <td>@item.ad</td>
+                <td>@item.soyad</td>
+                <td>@item.email</td>
+                <td>@item.telefonno</td>
+                <td>@item.cinsiyet</td>
+
+            </tr>
+
+        }
+    </tbody>
+
+</table>
